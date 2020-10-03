@@ -11,7 +11,7 @@ export class App {
 
     site.render(this.model);
     new Sidebar('#panel', (block) => {
-      model.push(block);
+      this.model.push(block);
       site.render(this.model);
     });
   }
